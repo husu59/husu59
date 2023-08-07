@@ -1,0 +1,17 @@
+static int arr[100001];
+int* printNumbers(int a,int*x)
+{
+int b = 1;
+while (a)
+{
+b *= 10;
+a--;
+}
+int c = 0;
+for (c = 1; c < b; c++)
+{
+arr[c - 1] = c;
+}
+    *x=--b;
+return arr;
+}
