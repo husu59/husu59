@@ -1,0 +1,10 @@
+public class HouseApp {  
+  
+    public static void main(String[] args) {  
+  
+        BuyHouse2 target = new BuyHouse2();  
+        CglibProxy cglibProxy = new CglibProxy(target);  
+        BuyHouse2 buyHouseCglibProxy = (BuyHouse2) cglibProxy.getProxyInstance();  
+        buyHouseCglibProxy.buyHouse();  
+    }  
+}  
