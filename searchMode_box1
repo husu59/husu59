@@ -1,0 +1,17 @@
+#include <QCheckBox>
+ 
+// private
+private:
+    QCheckBox* searchMode_box1,* searchMode_box2;
+public:
+    void searchMode_box_init();
+
+void Finddialog::searchMode_box_init()
+{
+    searchMode_box1 = new QCheckBox
+    searchMode_box2 = new QCheckBox
+    searchMode_box1->setParent(this);
+    searchMode_box2->setParent(this);
+    searchMode_box1->move(200, 170);
+    searchMode_box2->move(350, 170);
+}
